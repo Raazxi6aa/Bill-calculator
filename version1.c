@@ -26,6 +26,7 @@ int main() {
             int id;
             printf("\nEnter 10 digit Consumer Id:");
             scanf("%d",&id);
+            printf("\n");
         }
         break;
     }
@@ -53,6 +54,7 @@ else if (choose==2){
             }
             printf("Total bill : %.2f",bill);
         }
+        printf("\n");
     }
 
 }
