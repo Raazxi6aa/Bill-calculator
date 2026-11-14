@@ -149,5 +149,5 @@ void cost(void)
             }
              printf("Total bill : %.2f",bill);
            
-        
+
 }
