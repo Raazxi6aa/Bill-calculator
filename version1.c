@@ -1,5 +1,9 @@
 #include <stdio.h>
+int bill;
 void charge(void);
+void consumer(void);
+void cost(void);
+
 
 int main() {
     int choose;
@@ -36,23 +40,8 @@ else if (choose==2){
     {
         case 2:
         {
-            float bill=0;
-            int unit;
-            printf("Enter unit used:");
-            scanf("%d",&unit);
-            if(unit<=50){
-                bill=unit*2.90;
-            }
-            else if(unit<=200){
-                bill=50*2.90+(unit-50)*4.70;
-            }
-            else if(unit<=400){
-                bill=50*2.90+150*4.70+(unit-200)*5.70;
-            }
-            else{
-                bill=50*2.90+150*4.70+200*5.70+(unit-400)*6.10;
-            }
-            printf("Total bill : %.2f",bill);
+            cost();
+            
         }
         printf("\n");
     }
@@ -73,12 +62,14 @@ else if (choose==4)
     {
         case 4:
         {
-            printf("Calculate is currently under process");
+            consumer();
+            printf("\n");
         }
     }
 }
   else{
     printf("Choose correct option");
+    printf("\n");
   }
 
   printf("==============");
@@ -105,4 +96,58 @@ void charge(void)
       printf("\t\t\tRs. 6.10");
       printf("\n");
 
+}
+void consumer(void)
+{
+    int name1[100],id1;
+    float bill1;
+    printf("Enter Consumer name:");
+    scanf(" %[^\n]",&name1);
+    printf("Enter 10 Digit Consumer ID:");
+    scanf("%d",&id1);
+     float bill=0;
+            int unit;
+            printf("Enter unit used:");
+            scanf("%d",&unit);
+            if(unit<=50){
+                bill=unit*2.90;
+            }
+            else if(unit<=200){
+                bill=50*2.90+(unit-50)*4.70;
+            }
+            else if(unit<=400){
+                bill=50*2.90+150*4.70+(unit-200)*5.70;
+            }
+            else{
+                bill=50*2.90+150*4.70+200*5.70+(unit-400)*6.10;
+            }
+
+            printf("\n\n");
+            printf("\tName:%s",name1);
+            printf("\t\t\t\tId:%d",id1);
+            printf("\n\n\tUnit Consumed:%d",unit);
+            printf("\t\t\tTotal Bill:%.2f",bill);
+
+}
+void cost(void)
+{
+      float bill=0;
+            int unit;
+            printf("Enter unit used:");
+            scanf("%d",&unit);
+            if(unit<=50){
+                bill=unit*2.90;
+            }
+            else if(unit<=200){
+                bill=50*2.90+(unit-50)*4.70;
+            }
+            else if(unit<=400){
+                bill=50*2.90+150*4.70+(unit-200)*5.70;
+            }
+            else{
+                bill=50*2.90+150*4.70+200*5.70+(unit-400)*6.10;
+            }
+             printf("Total bill : %.2f",bill);
+           
+        
 }
