@@ -4,7 +4,6 @@ void charge(void);
 void consumer(void);
 void cost(void);
 
-
 int main() {
     int choose;
    printf("==============");
