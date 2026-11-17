@@ -71,7 +71,7 @@ else if (choose==4)
     printf("\n");
   }
 
-  printf("==============");
+   printf("==============");
    printf("Thank You for using our service");
    printf("==============");
 
@@ -89,11 +89,11 @@ void charge(void)
     printf("\t\t\tRs. 2.90");
     printf("\n\t51-200");
     printf("\t\t\tRs. 4.70");
-     printf("\n\t200-400");
-     printf("\t\t\tRs. 5.70");
-     printf("\n\t400+");
-      printf("\t\t\tRs. 6.10");
-      printf("\n");
+    printf("\n\t200-400");
+    printf("\t\t\tRs. 5.70");
+    printf("\n\t400+");
+    printf("\t\t\tRs. 6.10");
+    printf("\n");
 
 }
 void consumer(void)
