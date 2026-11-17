@@ -27,7 +27,7 @@ int main() {
             printf("Enter Consumer name:");
             scanf(" %[^\n]",name);
             int id;
-            printf("\nEnter 10 digit Consumer Id:");
+            printf("\nEnter Consumer Id:");
             scanf("%d",&id);
             printf("\n");
         }
@@ -102,7 +102,7 @@ void consumer(void)
     float bill1;
     printf("Enter Consumer name:");
     scanf(" %[^\n]",&name1);
-    printf("Enter 10 Digit Consumer ID:");
+    printf("Enter Consumer ID:");
     scanf("%d",&id1);
      float bill=0;
             int unit;
