@@ -56,7 +56,8 @@ else if (choose==4)
         
             consumer();
             printf("\n");
-        
+           
+            
     
 }
   else{
@@ -119,6 +120,9 @@ void consumer(void)
             printf("\t\t\t\tId:%d",id1);
             printf("\n\n\tUnit Consumed:%d",unit);
             printf("\t\t\tTotal Bill:%.2f",bill);
+            printf("\n");
+             printf("\t\tALL TARRIF DETAILS:\n");
+             charge();
 
 }
 void cost(void)
